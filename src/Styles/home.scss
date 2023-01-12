@@ -1,0 +1,340 @@
+
+$Blue: #0e3569;
+$Grey: #d6dde6;
+$LightGrey: #efefef;
+
+.home{
+    position: relative;
+    height: 100vh;
+    max-height: 1080px;
+    max-width: 1920px;
+    margin: auto;
+
+    .navConteiner{
+        background-color: $Grey;
+        height: 60px;
+        position: relative;
+        top: 30px;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        z-index: 10;
+        nav{
+            
+            ul{
+                display: flex;
+
+
+            
+                li{
+                    list-style: none;
+                    width: 110px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .firtsChild{
+                        position: relative;
+                    }
+
+                    
+                    .firtsChild::before{
+                        content: "";
+                        position: absolute;
+                        width: 100px;
+                        height: 150px;
+                        background-color: $LightGrey;
+                        bottom: -30px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: -10;
+                    }
+
+                    .firtsChild:hover{
+                        color: $Grey;
+                    }
+                    a{
+                        text-decoration: none;
+                        width: 150px;  
+                        z-index: 20;
+                        color: #000; 
+                        transition: 0.3s;
+                    }
+
+                    a:hover{
+                        color: $LightGrey;
+                    }
+                }
+
+                .switchModeNocturne{
+                    height: 30px;
+                    width: 120px;
+
+                    input{
+                        height: 10px;
+                        width: 50px;
+                        background-color: $LightGrey;
+                        border-radius: 10px;
+                        position: relative;
+                        cursor: pointer;
+                    }
+
+                    input::before{
+                        content: "";
+                        position: absolute;
+                        background-color: $Blue;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 30px;
+                        top: -10px;
+                        left: 50%;
+                        z-index: 5;
+                    }
+
+                    input::after{
+                        content: "";
+                        position: absolute;
+                        height: 10px;
+                        width: 50px;
+                        background-color: $LightGrey;
+                        border-radius: 30px;
+                        z-index: 0;
+                    }
+
+                    input:checked::before{
+                        left: 0;
+                        transition: 0.5s;
+                        background-color: $LightGrey;
+                    }
+
+                    input:not(:checked)::before{
+                        left: 50%;
+                        transition: 0.5s;
+                        background-color: $Blue;
+                    }
+                }
+            }
+        }
+    }
+
+    .conteinerHome{
+        height: 600px;
+
+        .conteinerTittle{
+            position: relative;
+            /* left: -457px; */
+            top: 50px;
+            width: 50%;
+            margin: auto;
+            h1{
+                font-size: 74px;
+            }
+
+            span{
+                font-size: 28px;
+                display: block;
+                font-family: monospace;
+                white-space: nowrap;
+                border-right: 4px solid;
+                width: 23ch;
+
+                animation: typing 4s steps(23), blink 0.5s infinite step-end alternate;
+                overflow: hidden;
+            }
+
+            @keyframes typing {
+                from {width: 0;}
+            }
+
+            @keyframes blink {
+                50% {border-color: transparent;}
+            }
+        }
+
+        .conteinerTittle::before{
+            content: "";
+            position: absolute;
+            width: 0; 
+            height: 0; 
+            border-left: 50px solid $Blue;
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+            left: -90px;
+            top: 20px;
+        }
+    }
+
+    .conteinerText{
+        position: relative;
+        top: 250px;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        height: 200px;
+        overflow: hidden;
+
+
+            p{
+
+                font-size: 18px;
+                animation: aparecer 4s 
+            }
+    }
+
+    @keyframes aparecer {
+        0%{ transform: translateY(200px);}
+        100%{transform: translateY(0px);}
+    }
+}
+
+.home::before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    max-height: 1080px;
+    background-color: $LightGrey;
+    left: 100px;
+    background-color: #efefef;
+    z-index: -100;
+}
+
+
+@media(max-width: 1150px){
+    .home .conteinerHome .conteinerTittle {
+        width: 80%;
+        left: 50px;
+    }
+}
+
+@media(max-width: 800px){
+    .home .conteinerHome .conteinerTittle h1 {
+        font-size: 54px;
+    }
+
+    .home .conteinerHome .conteinerTittle span {
+        font-size: 20px;
+    }
+
+    .home .conteinerHome .conteinerTittle::before {
+        border-left: 35px solid #0e3569;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        left: -55px;
+        top: 16px;
+    }
+
+    .active .conteinerHome .conteinerTittle::before {
+        border-left: 35px solid $Grey;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        left: -55px;
+        top: 16px;
+    }
+}
+
+@media (max-width: 800px){
+    
+    .home .conteinerHome .conteinerTittle h1 {
+        font-size: 44px;
+    }
+
+    .home .conteinerHome .conteinerTittle span {
+        font-size: 16px;
+    }
+
+    .home .conteinerHome .conteinerTittle::before {
+        border-left: 25px solid #0e3569;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        left: -42px;
+        top: 13px;
+    }
+
+    .active .conteinerHome .conteinerTittle::before {
+        border-left: 25px solid $Grey;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        left: -42px;
+        top: 13px;
+    }
+
+    .home .conteinerText {
+        top: 181px;
+    }
+
+    .home::before {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+
+    .home .navConteiner {
+        margin: auto;
+        margin-top: 30px;
+        width: 95%;
+    }
+
+    .home .navConteiner nav ul li {
+        width: 80px;
+    }
+
+    .home .navConteiner nav ul .switchModeNocturne {
+        width: 80px;
+    }
+
+    .home .navConteiner nav ul li .firtsChild::before {
+        width: 60px;
+    }
+
+    .home .navConteiner nav ul .switchModeNocturne input::after {
+        width: 35px;
+    }
+
+    .home .navConteiner nav ul .switchModeNocturne input::before {
+        width: 20px;
+        height: 20px;
+        top: -5px;
+    }
+
+    .home .conteinerHome .conteinerTittle {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .home .navConteiner {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .conteinerText {
+        height: 300px;
+        width: 75%;
+    }
+
+    @keyframes aparecer {
+        0%{ transform: translateY(300px);}
+        100%{transform: translateY(0px);}
+    }
+
+}
+
+@media( max-width: 450px){
+    .home .conteinerHome .conteinerTittle h1 {
+        font-size: 34px;
+    }
+
+    .home .conteinerText {
+        height: 350px;
+    }
+
+    @keyframes aparecer {
+        0%{ transform: translateY(350px);}
+        100%{transform: translateY(0px);}
+    }
+
+
+}
