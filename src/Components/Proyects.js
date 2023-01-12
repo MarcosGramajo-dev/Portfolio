@@ -4,7 +4,6 @@ import github from '../images/github.svg'
 
 import iconReact from '../images/react.svg'
 import sass from '../images/sass.png'
-import firebase from '../images/firebase.svg'
 import enlace from '../images/enlace.png'
 import nodejs from '../images/Nodejs.png'
 import mongodb from '../images/mongodb.png'
