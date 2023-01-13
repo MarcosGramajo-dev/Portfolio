@@ -3,6 +3,7 @@ import mail from '../images/mail.svg'
 import github from '../images/github.svg'
 import location from '../images/location.svg'
 import whatsapp from '../images/whatsapp.svg'
+import iconCV from '../images/iconCV.svg'
 
 export default function Contacto(){
     return(
@@ -12,14 +13,14 @@ export default function Contacto(){
                         <li>
                             <a href="https://github.com/MarcosGramajo-dev" >
                                 <div className="iconFooter">
-                                <img src={github} alt="mail" className="iconFooter"></img>
+                                <img src={github} alt="github" className="iconFooter"></img>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a href="https://wa.me/543814675299" >
                                 <div className="iconFooter">
-                                <img src={whatsapp} alt="mail" className="iconFooter"></img>
+                                <img src={whatsapp} alt="WP" className="iconFooter"></img>
                                 </div>
                             </a>    
                         </li>
@@ -31,9 +32,9 @@ export default function Contacto(){
                             </a>
                         </li>
                         <li>
-                            <a href="https://goo.gl/maps/6v1NLWZm427MtCqf9" >
+                            <a href="https://drive.google.com/file/d/14LDdHAhRKZaSs4LyFjZizApiVXS3NJXQ/view?usp=sharing" >
                                 <div className="iconFooter">
-                                <img src={location} alt="mail" className="iconFooter"></img>
+                                <img src={iconCV} alt="CV" className="iconFooter"></img>
                                 </div>
                             </a>    
                         </li>
