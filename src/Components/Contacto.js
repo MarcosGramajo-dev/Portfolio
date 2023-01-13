@@ -1,7 +1,6 @@
 import React from 'react'
 import mail from '../images/mail.svg'
 import github from '../images/github.svg'
-import location from '../images/location.svg'
 import whatsapp from '../images/whatsapp.svg'
 import iconCV from '../images/iconCV.svg'
 
