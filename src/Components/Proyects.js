@@ -12,7 +12,22 @@ import typescript from '../images/typescript.png'
 
 
 
+
 export default function Proyectos(){
+    const infoProyects = {
+        proyect1 : {
+            github: "https://github.com/MarcosGramajo-dev/Coffe-Shop",
+            link:"https://coffe-shop-production-ceab.up.railway.app/"
+        },
+        proyect2 : {
+            github: "https://github.com/MarcosGramajo-dev/PaginaRadiadores",
+            link:"https://radiadores.netlify.app/"
+        },
+        proyect3 : {
+            github: "https://github.com/MarcosGramajo-dev/PetCheck",
+            link:"https://petcheck.com.ar/"
+        }
+    }
     return(
         <div className="conteinerProyects" id="proyects">
             <div className="cards">
@@ -28,8 +43,8 @@ export default function Proyectos(){
                         </div>
 
                         <div className="enlacesProyects">
-                            <a href="https://github.com/MarcosGramajo-dev/Coffe-Shop" target="_blank" rel="noreferrer"><img src={github} alt="github"></img></a>
-                            <a href="https://coffe-shop-production-ceab.up.railway.app/" target="_blank" rel="noreferrer"><img src={enlace} alt="mail"></img></a>
+                            <a href={infoProyects.proyect1.github} target="_blank" rel="noopener noreferrer" ><img src={github} alt="github"></img></a>
+                            <a href={infoProyects.proyect1.link} target="_blank" rel="noopener noreferrer"><img src={enlace} alt="mail"></img></a>
                         </div>
 
                         <img className="wave" src={wave} alt="wave"></img>
@@ -47,8 +62,8 @@ export default function Proyectos(){
                         </div>
 
                         <div className="enlacesProyects">
-                            <a href="https://github.com/MarcosGramajo-dev/PaginaRadiadores"><img src={github} alt="mail"></img></a>
-                            <a href="https://radiadores.netlify.app/"><img src={enlace} alt="mail"></img></a>
+                            <a href={infoProyects.proyect2.github} target="_blank" rel="noopener noreferrer"><img src={github} alt="mail"></img></a>
+                            <a href={infoProyects.proyect2.link} target="_blank" rel="noopener noreferrer"><img src={enlace} alt="mail"></img></a>
                         </div>
 
                         <img className="wave" src={wave} alt="wave"></img>
@@ -68,8 +83,8 @@ export default function Proyectos(){
                         </div>
 
                         <div className="enlacesProyects">
-                            <a href="https://github.com/MarcosGramajo-dev/PetCheck" target="_blank"><img src={github} alt="mail"></img></a>
-                            <a href="https://petcheck.com.ar/" target="_blank"><img src={enlace} alt="mail"></img></a>
+                            <a href={infoProyects.proyect3.github} target="_blank" rel="noopener noreferrer"><img src={github} alt="mail"></img></a>
+                            <a href={infoProyects.proyect1.link} target="_blank" rel="noopener noreferrer"><img src={enlace} alt="mail"></img></a>
                         </div>
 
                         <img className="wave" src={wave} alt="wave"></img>
