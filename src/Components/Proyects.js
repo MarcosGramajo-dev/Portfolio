@@ -7,6 +7,8 @@ import sass from '../images/sass.png'
 import enlace from '../images/enlace.png'
 import nodejs from '../images/Nodejs.png'
 import mongodb from '../images/mongodb.png'
+import tailwind from '../images/tailwind.png'
+import typescript from '../images/typescript.png'
 
 
 
@@ -55,17 +57,19 @@ export default function Proyectos(){
                 <div className="items-3 item">
                     <div className="contenedor">
                     
-                        <p>Portfolio</p>
+                        <p>Petcheck(in process...)</p>
                         <p>Tecnologias Aplicadas:</p>
                         
                         <div className="iconsProyects">
-                            <img src={iconReact} alt="mail"></img>
-                            <img src={sass} alt="mail"></img>
+                            <img src={tailwind} alt="mail"></img>
+                            <img src={typescript} alt="mail"></img>
+                            <img src={nodejs} alt="mail"></img>
+                            <img src={mongodb} alt="mail"></img>
                         </div>
 
                         <div className="enlacesProyects">
-                            <a href="google.com" target="_blank"><img src={github} alt="mail"></img></a>
-                            <a href="google.com" target="_blank"><img src={enlace} alt="mail"></img></a>
+                            <a href="https://github.com/MarcosGramajo-dev/PetCheck" target="_blank"><img src={github} alt="mail"></img></a>
+                            <a href="https://petcheck.com.ar/" target="_blank"><img src={enlace} alt="mail"></img></a>
                         </div>
 
                         <img className="wave" src={wave} alt="wave"></img>
