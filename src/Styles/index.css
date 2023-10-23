@@ -147,11 +147,11 @@
 }
 .home .conteinerText {
   position: relative;
-  top: 250px;
+  top: 200px;
   width: 50%;
   margin: auto;
   text-align: center;
-  height: 200px;
+  height: 360px;
   overflow: hidden;
 }
 .home .conteinerText p {
@@ -297,7 +297,7 @@
 }
 .conteinerProyects {
   position: relative;
-  max-height: 1080px;
+  max-height: 1300px;
   max-width: 1920px;
   margin: auto;
   display: flex;

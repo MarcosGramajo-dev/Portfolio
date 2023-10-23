@@ -48,7 +48,7 @@ export default function Home(){
 
                     <div className="conteinerText">
                         <p>
-                        ¡Hola!, Gracias por visitar mi Porfolio, te cuento algo de mi, soy estudiante de Desarrollo y calidad de Software Me considero una persona responsable y ordenado. Buscando mi primera experiencia laboral. 
+                        With nearly a year of full-stack development experience, I specialize in the MERN stack with TypeScript and also have strong Python skills, particularly with Odoo. I take pride in my collaborative work on the 'Petcheck' university project, where I contributed as a developer, DevOps, and Scrum Master. My adaptable work style includes both independent and team-based projects. Currently pursuing a Software Development and Quality Assurance degree at UNSTA, I'm motivated by continuous learning and embracing new challenges.
                         </p>
                     </div>
                 </div>
