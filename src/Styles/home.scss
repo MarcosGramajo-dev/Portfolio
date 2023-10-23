@@ -2,8 +2,11 @@
 $Blue: #0e3569;
 $Grey: #d6dde6;
 $LightGrey: #efefef;
-
+*{
+    scroll-behavior: smooth;
+}
 .home{
+    
     position: relative;
     height: 100vh;
     max-height: 1080px;
@@ -70,6 +73,7 @@ $LightGrey: #efefef;
                 }
 
                 .switchModeNocturne{
+                    display: none;
                     height: 30px;
                     width: 120px;
 

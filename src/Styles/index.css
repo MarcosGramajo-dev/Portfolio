@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Quantico&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
 .home {
   position: relative;
   height: 100vh;
@@ -55,6 +59,7 @@
   color: #efefef;
 }
 .home .navConteiner nav ul .switchModeNocturne {
+  display: none;
   height: 30px;
   width: 120px;
 }
@@ -307,7 +312,7 @@
   flex-wrap: wrap;
   width: 90%;
 }
-.conteinerProyects .cards .items-1, .conteinerProyects .cards .items-2, .conteinerProyects .cards .items-3 {
+.conteinerProyects .cards .items-1, .conteinerProyects .cards .items-2, .conteinerProyects .cards .items-3, .conteinerProyects .cards .items-4 {
   position: relative;
   width: 512px;
   height: 320px;
@@ -326,9 +331,12 @@
   background-image: url("../images/proyect-2.png");
 }
 .conteinerProyects .cards .items-3 {
+  background-image: url("../images/proyect-3.png");
+}
+.conteinerProyects .cards .items-4 {
   background-image: url("../images/proyect-4.png");
 }
-.conteinerProyects .cards .items-1 .contenedor, .conteinerProyects .cards .items-2 .contenedor, .conteinerProyects .cards .items-3 .contenedor {
+.conteinerProyects .cards .items-1 .contenedor, .conteinerProyects .cards .items-2 .contenedor, .conteinerProyects .cards .items-3 .contenedor, .conteinerProyects .cards .items-4 .contenedor {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -336,13 +344,16 @@
   transition: 1s;
   background-color: rgba(128, 128, 128, 0.8);
 }
-.conteinerProyects .cards .items-1:hover > .contenedor, .conteinerProyects .cards .items-2:hover > .contenedor, .conteinerProyects .cards .items-3:hover > .contenedor {
+.conteinerProyects .cards .items-1:hover > .contenedor, .conteinerProyects .cards .items-2:hover > .contenedor, .conteinerProyects .cards .items-3:hover > .contenedor, .conteinerProyects .cards .items-4:hover > .contenedor {
   bottom: 0%;
 }
 .conteinerProyects .cards .items-2 {
   animation: onda 2s infinite;
 }
 .conteinerProyects .cards .items-3 {
+  animation: onda 4s infinite;
+}
+.conteinerProyects .cards .items-4 {
   animation: onda 4s infinite;
 }
 .conteinerProyects .cards .contenedor {

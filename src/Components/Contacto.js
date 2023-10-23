@@ -31,7 +31,7 @@ export default function Contacto(){
                             </a>
                         </li>
                         <li>
-                            <a href="https://drive.google.com/file/d/14LDdHAhRKZaSs4LyFjZizApiVXS3NJXQ/view?usp=sharing" >
+                            <a href="https://drive.google.com/file/d/1SEi8c0Iouu4IXgexz56I5b63_uZSPwmb/view?usp=sharing" >
                                 <div className="iconFooter">
                                 <img src={iconCV} alt="CV" className="iconFooter"></img>
                                 </div>

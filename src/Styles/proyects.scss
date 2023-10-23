@@ -23,7 +23,7 @@ $LightGrey: #efefef;
         flex-wrap: wrap;
         width: 90%;
 
-        .items-1, .items-2, .items-3{
+        .items-1, .items-2, .items-3, .items-4{
             position: relative;
             width: 512px;
             height: 320px;
@@ -45,10 +45,14 @@ $LightGrey: #efefef;
         }
 
         .items-3{
+            background-image: url('../images/proyect-3.png');
+        }
+
+        .items-4{
             background-image: url('../images/proyect-4.png');
         }
 
-        .items-1 .contenedor, .items-2 .contenedor, .items-3 .contenedor{
+        .items-1 .contenedor, .items-2 .contenedor, .items-3 .contenedor, .items-4 .contenedor{
             position: absolute;
             width: 100%;
             height: 100%;
@@ -57,7 +61,7 @@ $LightGrey: #efefef;
             background-color: rgb(128, 128, 128, 0.8);
         }
         
-        .items-1:hover > .contenedor, .items-2:hover > .contenedor, .items-3:hover > .contenedor{
+        .items-1:hover > .contenedor, .items-2:hover > .contenedor, .items-3:hover > .contenedor, .items-4:hover > .contenedor{
             bottom: 0%;
         }
 
@@ -66,6 +70,10 @@ $LightGrey: #efefef;
         }
 
         .items-3{
+            animation: onda 4s infinite;
+        }
+
+        .items-4{
             animation: onda 4s infinite;
         }
 
