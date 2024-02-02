@@ -9,6 +9,7 @@ import nodejs from '../images/Nodejs.png'
 import mongodb from '../images/mongodb.png'
 import tailwind from '../images/tailwind.png'
 import typescript from '../images/typescript.png'
+import iconThreejs from '../images/threejsLogo.jpg'
 
 
 
@@ -30,6 +31,10 @@ export default function Proyectos(){
         proyect4 : {
             github: "https://github.com/MarcosGramajo-dev/FrontEcommers",
             link:"https://ecommersagency.netlify.app/"
+        },
+        proyect5 : {
+            github: "https://github.com/MarcosGramajo-dev/Portfolio",
+            link:"https://cocatin.netlify.app/"
         }
     }
     return(
@@ -110,6 +115,27 @@ export default function Proyectos(){
                         <div className="enlacesProyects">
                             <a href={infoProyects.proyect4.github} target="_blank" rel="noopener noreferrer"><img src={github} alt="mail"></img></a>
                             <a href={infoProyects.proyect4.link} target="_blank" rel="noopener noreferrer"><img src={enlace} alt="mail"></img></a>
+                        </div>
+
+                        <img className="wave" src={wave} alt="wave"></img>
+                    </div>
+                </div>
+
+                <div className="items-5 item">
+                    <div className="contenedor">
+                    
+                        <p>Agency Catalog</p>
+                        <p>Tecnologias Aplicadas:</p>
+                        
+                        <div className="iconsProyects">
+                            <img src={tailwind} alt="mail"></img>
+                            <img src={iconReact} alt="iconReact"></img>
+                            <img src={iconThreejs} alt="iconThreejs"></img>
+                        </div>
+
+                        <div className="enlacesProyects">
+                            <a href={infoProyects.proyect5.github} target="_blank" rel="noopener noreferrer"><img src={github} alt="mail"></img></a>
+                            <a href={infoProyects.proyect5.link} target="_blank" rel="noopener noreferrer"><img src={enlace} alt="mail"></img></a>
                         </div>
 
                         <img className="wave" src={wave} alt="wave"></img>

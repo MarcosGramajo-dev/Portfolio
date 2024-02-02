@@ -312,7 +312,7 @@
   flex-wrap: wrap;
   width: 90%;
 }
-.conteinerProyects .cards .items-1, .conteinerProyects .cards .items-2, .conteinerProyects .cards .items-3, .conteinerProyects .cards .items-4 {
+.conteinerProyects .cards .items-1, .conteinerProyects .cards .items-2, .conteinerProyects .cards .items-3, .conteinerProyects .cards .items-4, .conteinerProyects .cards .items-5 {
   position: relative;
   width: 512px;
   height: 320px;
@@ -336,7 +336,10 @@
 .conteinerProyects .cards .items-4 {
   background-image: url("../images/proyect-4.png");
 }
-.conteinerProyects .cards .items-1 .contenedor, .conteinerProyects .cards .items-2 .contenedor, .conteinerProyects .cards .items-3 .contenedor, .conteinerProyects .cards .items-4 .contenedor {
+.conteinerProyects .cards .items-5 {
+  background-image: url("../images/proyect-5.png");
+}
+.conteinerProyects .cards .items-1 .contenedor, .conteinerProyects .cards .items-2 .contenedor, .conteinerProyects .cards .items-3 .contenedor, .conteinerProyects .cards .items-4 .contenedor, .conteinerProyects .cards .items-5 .contenedor {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -344,7 +347,7 @@
   transition: 1s;
   background-color: rgba(128, 128, 128, 0.8);
 }
-.conteinerProyects .cards .items-1:hover > .contenedor, .conteinerProyects .cards .items-2:hover > .contenedor, .conteinerProyects .cards .items-3:hover > .contenedor, .conteinerProyects .cards .items-4:hover > .contenedor {
+.conteinerProyects .cards .items-1:hover > .contenedor, .conteinerProyects .cards .items-2:hover > .contenedor, .conteinerProyects .cards .items-3:hover > .contenedor, .conteinerProyects .cards .items-4:hover > .contenedor, .conteinerProyects .cards .items-5:hover > .contenedor {
   bottom: 0%;
 }
 .conteinerProyects .cards .items-2 {
@@ -354,6 +357,9 @@
   animation: onda 4s infinite;
 }
 .conteinerProyects .cards .items-4 {
+  animation: onda 4s infinite;
+}
+.conteinerProyects .cards .items-5 {
   animation: onda 4s infinite;
 }
 .conteinerProyects .cards .contenedor {
