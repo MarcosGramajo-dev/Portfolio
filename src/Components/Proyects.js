@@ -5,14 +5,11 @@ import github from '../images/github.svg'
 import iconReact from '../images/react.svg'
 import sass from '../images/sass.png'
 import enlace from '../images/enlace.png'
-import nodejs from '../images/Nodejs.png'
+//import nodejs from '../images/Nodejs.png'
 import mongodb from '../images/mongodb.png'
 import tailwind from '../images/tailwind.png'
 import typescript from '../images/typescript.png'
 import iconThreejs from '../images/threejsLogo.jpg'
-
-
-
 
 export default function Proyectos(){
     const infoProyects = {
