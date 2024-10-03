@@ -31,11 +31,20 @@ import {
 export default function Home(){
 
     useEffect(() => {
-        // Reemplaza 'G-XXXXXXXXXX' con tu ID de medición de Google Analytics
-        ReactGA.initialize('G-XXXXXXXXXX');
-    
-        // Opcional: registra la primera página vista
-        ReactGA.send({ hitType: 'pageview', page: window.location.pathname + window.location.search });
+        // Inserta el script de Google Tag Manager dinámicamente
+        const script = document.createElement('script');
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-5EM9R8ZHZR';
+        script.async = true;
+        document.head.appendChild(script);
+
+        // Configura gtag
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+        window.dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-5EM9R8ZHZR');
       }, []);
 
     return(
