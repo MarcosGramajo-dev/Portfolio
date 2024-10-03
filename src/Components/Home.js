@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import ReactGA from 'react-ga4';
+//import ReactGA from 'react-ga4';
 import avatar from '../images/Ellipse 4.png'
 import iconPerson from '../images/icons/person.svg'
 import iconCV from '../images/icons/clinical_notes.svg'
